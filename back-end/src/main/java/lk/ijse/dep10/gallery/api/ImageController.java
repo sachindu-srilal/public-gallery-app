@@ -37,4 +37,30 @@ public class ImageController {
         }
         return imageFileList;
     }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public List<String> saveImages(@RequestPart("images") List<Part> imageFiles,
+                                   UriComponentsBuilder urlBuilder){
+        List<String> imageUrlList = new ArrayList<>();
+
+        if (imageFiles != null){
+            String imageDirPath = servletContext.getRealPath("/images");
+            for (Part imageFile : imageFiles) {
+                String imageFilePath =
+                        new File(imageDirPath, imageFile.getSubmittedFileName()).getAbsolutePath();
+                try {
+                    imageFile.write(imageFilePath);
+                    UriComponentsBuilder cloneBuilder = urlBuilder.cloneBuilder();
+                    String imageUrl = cloneBuilder
+                            .pathSegment("images", imageFile.getSubmittedFileName())
+                            .toUriString();
+                    imageUrlList.add(imageUrl);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return imageUrlList;
+    }
 }
