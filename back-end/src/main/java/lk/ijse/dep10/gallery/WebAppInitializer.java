@@ -1,7 +1,9 @@
 package lk.ijse.dep10.gallery;
 
+import lk.ijse.dep10.gallery.api.CorsFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import javax.servlet.Filter;
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
 
@@ -21,4 +23,8 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
         return new String[]{"/"};
     }
 
+    @Override
+    protected Filter[] getServletFilters() {
+        return new Filter[]{new CorsFilter()};
+    }
 }
