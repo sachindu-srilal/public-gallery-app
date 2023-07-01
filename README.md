@@ -1,5 +1,35 @@
 # Public Gallery App
-This project for explore and practice the front-end and back-end technologies
+This project explores and practices front-end and back-end technologies. Using this application you can download and upload images quickly.
+
+### 1. Technology Used
+
+Front-End
+- HTML5
+- CSS3
+- SCSS
+- ECMAScript
+- jQuery
+- jQuery AJAX
+- Bootstrap
+- Animate.CSS
+- CSS Loaders
+- Parcel (Build Tool)
+
+Back-End
+- Java 11
+- Java SE 11
+- Spring Framework (Spring Web MVC)
+- Maven (Build Tool)
+- CORS Filters
+
+### 2.How to use this project
+  
+  To try this project,
+  1. Clone the Project 
+  2. Get the dependencies
+    - npm i
+  3. Then execute the application  
+  
 
 ### License
-Copyright &copy; 2023 DEP-10. All Rights Reserved.
+Copyright &copy |Sachindu Srilal | All Rights Reserved.
