@@ -27,7 +27,7 @@ Back-End
   To try this project,
   1. Clone the Project 
   2. Get the dependencies
-    - npm i
+    -(using npm i)
   3. Then execute the application  
   
 
