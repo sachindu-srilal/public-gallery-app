@@ -34,9 +34,9 @@ Back-End
   -Email - lal95.ac@gmail.com
 
 ### Follow me 
-  -Linkedin - https://www.linkedin.com/in/sachindu-srilal-316716180/                                                                                                         
-  -Twitter - https://twitter.com/SachinduSrilal                                                                                                                              
-  -Github - https://github.com/sachindu95
+  - Linkedin - https://www.linkedin.com/in/sachindu-srilal-316716180/                                                                                                       
+  - Twitter - https://twitter.com/SachinduSrilal                                                                                                                             
+  - Github - https://github.com/sachindu95
   
 ### License
 Copyright &copy |Sachindu Srilal | All Rights Reserved.
